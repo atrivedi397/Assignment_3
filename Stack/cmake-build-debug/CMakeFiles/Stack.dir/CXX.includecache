@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/atrivedi/Stack/main.cpp
+iostream
+-
+s_array.h
+/home/atrivedi/Stack/s_array.h
+
+/home/atrivedi/Stack/s_array.h
+
