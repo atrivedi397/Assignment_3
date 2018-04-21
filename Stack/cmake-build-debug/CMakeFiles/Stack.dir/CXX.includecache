@@ -6,11 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/atrivedi/Stack/main.cpp
+/home/atrivedi/Assignment_3/Stack/main.cpp
+
+/home/atrivedi/Assignment_3/Stack/s_array.h
+
+/home/atrivedi/Assignment_3/Stack/used_actions.cpp
 iostream
 -
 s_array.h
-/home/atrivedi/Stack/s_array.h
-
-/home/atrivedi/Stack/s_array.h
+/home/atrivedi/Assignment_3/Stack/s_array.h
 

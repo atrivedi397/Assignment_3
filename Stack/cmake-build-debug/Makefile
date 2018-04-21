@@ -48,10 +48,10 @@ RM = /home/atrivedi/Downloads/clion-2017.3.4/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/atrivedi/Stack
+CMAKE_SOURCE_DIR = /home/atrivedi/Assignment_3/Stack
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/atrivedi/Stack/cmake-build-debug
+CMAKE_BINARY_DIR = /home/atrivedi/Assignment_3/Stack/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/atrivedi/Stack/cmake-build-debug/CMakeFiles /home/atrivedi/Stack/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/atrivedi/Assignment_3/Stack/cmake-build-debug/CMakeFiles /home/atrivedi/Assignment_3/Stack/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/atrivedi/Stack/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/atrivedi/Assignment_3/Stack/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Stack.dir/build.make CMakeFiles/Stack.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+used_actions.o: used_actions.cpp.o
+
+.PHONY : used_actions.o
+
+# target to build an object file
+used_actions.cpp.o:
+	$(MAKE) -f CMakeFiles/Stack.dir/build.make CMakeFiles/Stack.dir/used_actions.cpp.o
+.PHONY : used_actions.cpp.o
+
+used_actions.i: used_actions.cpp.i
+
+.PHONY : used_actions.i
+
+# target to preprocess a source file
+used_actions.cpp.i:
+	$(MAKE) -f CMakeFiles/Stack.dir/build.make CMakeFiles/Stack.dir/used_actions.cpp.i
+.PHONY : used_actions.cpp.i
+
+used_actions.s: used_actions.cpp.s
+
+.PHONY : used_actions.s
+
+# target to generate assembly for a file
+used_actions.cpp.s:
+	$(MAKE) -f CMakeFiles/Stack.dir/build.make CMakeFiles/Stack.dir/used_actions.cpp.s
+.PHONY : used_actions.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... used_actions.o"
+	@echo "... used_actions.i"
+	@echo "... used_actions.s"
 .PHONY : help
 
 

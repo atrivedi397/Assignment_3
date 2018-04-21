@@ -43,10 +43,10 @@ RM = /home/atrivedi/Downloads/clion-2017.3.4/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/atrivedi/Stack
+CMAKE_SOURCE_DIR = /home/atrivedi/Assignment_3/Stack
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/atrivedi/Stack/cmake-build-debug
+CMAKE_BINARY_DIR = /home/atrivedi/Assignment_3/Stack/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Stack.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Stack.dir/flags.make
 
 CMakeFiles/Stack.dir/main.cpp.o: CMakeFiles/Stack.dir/flags.make
 CMakeFiles/Stack.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atrivedi/Stack/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Stack.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Stack.dir/main.cpp.o -c /home/atrivedi/Stack/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atrivedi/Assignment_3/Stack/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Stack.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Stack.dir/main.cpp.o -c /home/atrivedi/Assignment_3/Stack/main.cpp
 
 CMakeFiles/Stack.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Stack.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/atrivedi/Stack/main.cpp > CMakeFiles/Stack.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/atrivedi/Assignment_3/Stack/main.cpp > CMakeFiles/Stack.dir/main.cpp.i
 
 CMakeFiles/Stack.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Stack.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/atrivedi/Stack/main.cpp -o CMakeFiles/Stack.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/atrivedi/Assignment_3/Stack/main.cpp -o CMakeFiles/Stack.dir/main.cpp.s
 
 CMakeFiles/Stack.dir/main.cpp.o.requires:
 
@@ -81,17 +81,43 @@ CMakeFiles/Stack.dir/main.cpp.o.provides: CMakeFiles/Stack.dir/main.cpp.o.requir
 CMakeFiles/Stack.dir/main.cpp.o.provides.build: CMakeFiles/Stack.dir/main.cpp.o
 
 
+CMakeFiles/Stack.dir/used_actions.cpp.o: CMakeFiles/Stack.dir/flags.make
+CMakeFiles/Stack.dir/used_actions.cpp.o: ../used_actions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/atrivedi/Assignment_3/Stack/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Stack.dir/used_actions.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Stack.dir/used_actions.cpp.o -c /home/atrivedi/Assignment_3/Stack/used_actions.cpp
+
+CMakeFiles/Stack.dir/used_actions.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Stack.dir/used_actions.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/atrivedi/Assignment_3/Stack/used_actions.cpp > CMakeFiles/Stack.dir/used_actions.cpp.i
+
+CMakeFiles/Stack.dir/used_actions.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Stack.dir/used_actions.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/atrivedi/Assignment_3/Stack/used_actions.cpp -o CMakeFiles/Stack.dir/used_actions.cpp.s
+
+CMakeFiles/Stack.dir/used_actions.cpp.o.requires:
+
+.PHONY : CMakeFiles/Stack.dir/used_actions.cpp.o.requires
+
+CMakeFiles/Stack.dir/used_actions.cpp.o.provides: CMakeFiles/Stack.dir/used_actions.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Stack.dir/build.make CMakeFiles/Stack.dir/used_actions.cpp.o.provides.build
+.PHONY : CMakeFiles/Stack.dir/used_actions.cpp.o.provides
+
+CMakeFiles/Stack.dir/used_actions.cpp.o.provides.build: CMakeFiles/Stack.dir/used_actions.cpp.o
+
+
 # Object files for target Stack
 Stack_OBJECTS = \
-"CMakeFiles/Stack.dir/main.cpp.o"
+"CMakeFiles/Stack.dir/main.cpp.o" \
+"CMakeFiles/Stack.dir/used_actions.cpp.o"
 
 # External object files for target Stack
 Stack_EXTERNAL_OBJECTS =
 
 Stack: CMakeFiles/Stack.dir/main.cpp.o
+Stack: CMakeFiles/Stack.dir/used_actions.cpp.o
 Stack: CMakeFiles/Stack.dir/build.make
 Stack: CMakeFiles/Stack.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/atrivedi/Stack/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Stack"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/atrivedi/Assignment_3/Stack/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Stack"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Stack.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -100,6 +126,7 @@ CMakeFiles/Stack.dir/build: Stack
 .PHONY : CMakeFiles/Stack.dir/build
 
 CMakeFiles/Stack.dir/requires: CMakeFiles/Stack.dir/main.cpp.o.requires
+CMakeFiles/Stack.dir/requires: CMakeFiles/Stack.dir/used_actions.cpp.o.requires
 
 .PHONY : CMakeFiles/Stack.dir/requires
 
@@ -108,6 +135,6 @@ CMakeFiles/Stack.dir/clean:
 .PHONY : CMakeFiles/Stack.dir/clean
 
 CMakeFiles/Stack.dir/depend:
-	cd /home/atrivedi/Stack/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/atrivedi/Stack /home/atrivedi/Stack /home/atrivedi/Stack/cmake-build-debug /home/atrivedi/Stack/cmake-build-debug /home/atrivedi/Stack/cmake-build-debug/CMakeFiles/Stack.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/atrivedi/Assignment_3/Stack/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/atrivedi/Assignment_3/Stack /home/atrivedi/Assignment_3/Stack /home/atrivedi/Assignment_3/Stack/cmake-build-debug /home/atrivedi/Assignment_3/Stack/cmake-build-debug /home/atrivedi/Assignment_3/Stack/cmake-build-debug/CMakeFiles/Stack.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Stack.dir/depend
 
