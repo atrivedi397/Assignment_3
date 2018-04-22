@@ -1,0 +1,7 @@
+*
+*.*
+Stack/cmake-build-debug/
+Stack/.git
+!*.cpp
+!*.h
+!.gitignore
