@@ -2,19 +2,24 @@
 
 #pragma once
 
+//using interface
 class Q
 {
 protected:
     int front , rear , Size , *queue;
 public:
+    //pure virtual functions
     virtual void enqueue(int element) = 0;
     virtual void deque() = 0;
     virtual void display() = 0;
     Q() : front(-1) , rear(-1) , Size (0) , queue(nullptr){}
-    virtual ~Q() = 0 {};
+    virtual ~Q()
+    {
+        delete[] queue;
+    }
 };
 
-///******Linear Queue Using Array*******///
+///********************************Linear Queue Using Array***************************************///
 
 class L_Q : public Q
 {
@@ -28,7 +33,12 @@ public:
         std::cin>>Size;
         queue = new int[Size];
     }
-    ~Q() : {delete[] queue;}
+    ~L_Q() override
+    {
+        delete[] queue;
+    }
+
+
 };
 
 void L_Q :: enqueue(int element)
@@ -61,7 +71,7 @@ void L_Q::display()
             std::cout<<queue[i]<<"\n";
 }
 
-///************Circular Queue Using Array**********///
+///***********************************Circular Queue Using Array*****************************************///
 
 class C_Q : public Q
 {
@@ -77,7 +87,11 @@ public:
         std::cin>>Size;
         queue = new int[Size];
     }
-    ~Q() : {delete[] queue;}
+    ~C_Q() override
+    {
+        std::cout<<"\nDeleted \n"<<std::endl;
+        delete[] queue;
+    }
 };
 
 void C_Q::enqueue(int element)
@@ -135,6 +149,103 @@ void C_Q::display()
                 std::cout<<queue[j]<<std::endl;
         }
     }
+}
+
+
+///***************************Priority Queue Using Linked Lists******************************///
+
+struct node
+{
+    int coefficient;
+    int degree;    //priority
+    node* next;
+};
+
+class objects
+{
+private:
+    node* front = nullptr;
+    node* rear = nullptr;
+
+public:
+    void create_node(int coeff, int priority);
+    node* delete_node();
+    node* get_front_rear(int a);
+    node* traversal(int priority);
+    void display();
+};
+
+void objects::create_node(int coeff, int priority)
+{
+    node* temp; node* traversed;    //traversed is used for position where it has to be inserted according to priority
+    temp = new node;
+    temp->coefficient = coeff;
+    temp->degree = priority;
+    temp->next = nullptr;
+
+    //insertion if queue is blank
+    if(front == nullptr)
+    {
+        front = temp;
+        rear = temp;
+    }
+    //insertion if queue's front's priority is less than given then creating a new front
+    else if(priority < front->degree)
+    {
+        temp->next = front;
+        front = temp;
+    }
+    //insertion if queue's rear's priority is less than or equal given then creating a new rear and F_C_F_S rule
+    else if(priority >= rear->degree)
+    {
+        rear->next = temp;
+        rear = rear->next;
+    }
+        //inserting according to the priority
+    else
+    {
+        traversed = traversal(priority);
+        temp->next = traversed->next;
+        traversed->next = temp;
+    }
+}
+
+node* objects:: get_front_rear(int a)
+{
+    return a == 1 ? front : rear;
+}
+
+node *objects::delete_node()
+{
+    node* temp;
+    temp = get_front_rear(1);
+
+    front = temp->next;
+    delete temp;
+
+    return front;
+}
+
+node *objects::traversal(int priority)
+{
+    node* temp = get_front_rear(1);
+    while(temp->next->degree <= priority)
+        temp = temp->next;
+
+    return temp;
+}
+
+void objects::display()
+{
+    node* ptr = get_front_rear(1);
+
+    std::cout<<"\n\nYour priority queue is as follows (the priority is in the brackets):\n\n";
+    while(ptr != nullptr)
+    {
+        std::cout<<ptr->coefficient<<"("<<ptr->degree<<")<-";
+        ptr =  ptr->next;
+    }
+    delete ptr;
 }
 
 // Created by atrivedi on 4/20/18.
