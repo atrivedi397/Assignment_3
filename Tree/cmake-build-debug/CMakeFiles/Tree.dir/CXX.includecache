@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/atrivedi/Assignment_3/Tree/BST.h
+
+/home/atrivedi/Assignment_3/Tree/main.cpp
+iostream
+-
+BST.h
+/home/atrivedi/Assignment_3/Tree/BST.h
+
