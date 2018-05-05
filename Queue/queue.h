@@ -37,8 +37,6 @@ public:
     {
         delete[] queue;
     }
-
-
 };
 
 void L_Q :: enqueue(int element)
@@ -83,7 +81,7 @@ public:
     void display() override;
     C_Q() : count(0)
     {
-        std::cout<<"\nWhat is the size of Queue.\n";
+        std::cout<<"\nWhat is the size of Queue\n";
         std::cin>>Size;
         queue = new int[Size];
     }
@@ -161,13 +159,19 @@ struct node
     node* next;
 };
 
-class objects
+class P_Q
 {
 private:
-    node* front = nullptr;
-    node* rear = nullptr;
+    node *front = nullptr , *rear = nullptr;
+    int Size = 0, count;
 
 public:
+    P_Q() : count(0)
+    {
+        std::cout<<"\nWhat is the size of Queue ?\n";
+        std::cin>>Size;
+    }
+
     void create_node(int coeff, int priority);
     node* delete_node();
     node* get_front_rear(int a);
@@ -175,7 +179,7 @@ public:
     void display();
 };
 
-void objects::create_node(int coeff, int priority)
+void P_Q::create_node(int coeff, int priority)
 {
     node* temp; node* traversed;    //traversed is used for position where it has to be inserted according to priority
     temp = new node;
@@ -183,50 +187,63 @@ void objects::create_node(int coeff, int priority)
     temp->degree = priority;
     temp->next = nullptr;
 
-    //insertion if queue is blank
-    if(front == nullptr)
-    {
-        front = temp;
-        rear = temp;
-    }
-    //insertion if queue's front's priority is less than given then creating a new front
-    else if(priority < front->degree)
-    {
-        temp->next = front;
-        front = temp;
-    }
-    //insertion if queue's rear's priority is less than or equal given then creating a new rear and F_C_F_S rule
-    else if(priority >= rear->degree)
-    {
-        rear->next = temp;
-        rear = rear->next;
-    }
-        //inserting according to the priority
+    if(count == Size)
+        std::cout<<"\nThe Queue is full. Overflow!!!\n";
     else
     {
-        traversed = traversal(priority);
-        temp->next = traversed->next;
-        traversed->next = temp;
+        //insertion if queue is blank
+        if(front == nullptr)
+        {
+            front = temp;
+            rear = temp;
+            ++count;
+        }
+            //insertion if queue's front's priority is less than given then creating a new front
+        else if(priority < front->degree)
+        {
+            temp->next = front;
+            front = temp;
+            ++count;
+        }
+            //insertion if queue's rear's priority is less than or equal given then creating a new rear and F_C_F_S rule
+        else if(priority >= rear->degree)
+        {
+            rear->next = temp;
+            rear = rear->next;
+            ++count;
+        }
+            //inserting according to the priority
+        else
+        {
+            traversed = traversal(priority);
+            temp->next = traversed->next;
+            traversed->next = temp;
+            ++count;
+        }
     }
 }
 
-node* objects:: get_front_rear(int a)
+node* P_Q:: get_front_rear(int a)
 {
     return a == 1 ? front : rear;
 }
 
-node *objects::delete_node()
+node *P_Q::delete_node()
 {
     node* temp;
     temp = get_front_rear(1);
-
-    front = temp->next;
-    delete temp;
-
+    if(count == 0 || temp == nullptr)
+        std::cout<<"\nNothing to delete ...!! Underflow.\n";
+    else
+    {
+        front = temp->next;
+        std::cout<<"\nThe deleted element is : "<<temp->coefficient<<std::endl;
+        delete temp;
+    }
     return front;
 }
 
-node *objects::traversal(int priority)
+node *P_Q::traversal(int priority)
 {
     node* temp = get_front_rear(1);
     while(temp->next->degree <= priority)
@@ -235,18 +252,21 @@ node *objects::traversal(int priority)
     return temp;
 }
 
-void objects::display()
+void P_Q::display()
 {
     node* ptr = get_front_rear(1);
-
-    std::cout<<"\n\nYour priority queue is as follows (the priority is in the brackets):\n\n";
-    while(ptr != nullptr)
+    if(count == 0 || front == nullptr)
+        std::cout<<"\nNothing to display.\n";
+    else
     {
-        std::cout<<ptr->coefficient<<"("<<ptr->degree<<")<-";
-        ptr =  ptr->next;
+        std::cout<<"\n\nYour priority queue is as follows (the priority is in the brackets):\n\n";
+        while(ptr != nullptr)
+        {
+            std::cout<<ptr->coefficient<<"("<<ptr->degree<<")<-";
+            ptr =  ptr->next;
+        }
     }
     delete ptr;
 }
-
 // Created by atrivedi on 4/20/18.
 //

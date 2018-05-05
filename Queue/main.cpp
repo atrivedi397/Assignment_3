@@ -1,49 +1,94 @@
 #include <iostream>
 #include "queue.h"
+template <typename T>
+//reference to a pointer which is of type T is passed
+void functions(T*& object)
+{
+    do
+    {
+        int element , answer;
+        std::cout<<"\n\nThe Functions of a Queue are following\n1. Enqueue\n2. Deque\n3. Display\n4. Exit\n";
+        std::cin>>answer;
+
+        switch (answer)
+        {
+            case 1 :  std::cout<<"\nEnter the element to be enqueued.\n";
+                      std::cin>>element;
+                      object->enqueue(element);
+                      break;
+
+            case 2 :  object->deque();
+                      break;
+
+            case 3 :  object->display();
+                      break;
+
+            case 4 :  exit(0);
+
+            default : std::cout<<"\nPlease enter a valid choice. !!!\n";
+        }
+    }while(true);
+}
+
+//function overloading
+void functions(P_Q*& object)
+{
+    do
+    {
+        int element , prior = -1 ,answer;
+        std::cout<<"\nThe Functions of a Queue are following\n1. Enqueue\n2. Deque\n3. Display\n4. Exit\n";
+        std::cin>>answer;
+
+        switch (answer)
+        {
+            case 1 :  std::cout<<"\nEnter the element and its priority to be enqueued.\n";
+                std::cin>>element>>prior;
+                object->create_node(element , prior);
+                break;
+
+            case 2 :  object->delete_node();
+                break;
+
+            case 3 :  object->display();
+                break;
+
+            case 4 :  exit(0);
+
+            default : std::cout<<"\nPlease enter a valid choice. !!!\n";
+        }
+    }while(true);
+}
+
 int main() 
 {
-    std::cout<<"\nI am  circular : \n";
-    C_Q* object_cq;
-    object_cq = new C_Q;
-    object_cq->display();
-    object_cq->enqueue(54);
-    object_cq->enqueue(65);
-    object_cq->display();
-    object_cq->enqueue(87);
-    object_cq->display();
-    object_cq->deque();
-    object_cq->display();
-    object_cq->deque();
-    object_cq->enqueue(97);
-    object_cq->display();
+    int answer;
 
+    std::cout<<"\nWhich Queue you want to work with ?\n1. Linear\n2. Circular\n3. Priority\n4. Any other key to Exit\n";
+    std::cin>>answer;
+    switch (answer)
+    {
+        case 1 :
+        {
+            auto l_q  = new L_Q;
+            functions(l_q);
+            delete l_q;
+        }
 
-    std::cout<<"\nI am linear :\n";
-    auto object_lq = new L_Q;
-    object_lq->display();
-    object_lq->enqueue(54);
-    object_lq->enqueue(65);
-    object_lq->display();
-    object_lq->enqueue(87);
-    object_lq->display();
-    object_lq->deque();
-    object_lq->display();
-    object_lq->deque();
-    object_lq->enqueue(97);
-    object_lq->display();
+        case 2 :
+        {
+            auto c_q = new C_Q;
+            functions(c_q);
+            delete c_q;
+        }
 
-    std::cout<<"\nI am priority :\n";
-    auto object_pq = new objects;
-    object_pq->display();
-    object_pq->create_node(54 , 2);
-    object_pq->create_node(65 , 3);
-    object_pq->display();
-    object_pq->create_node(87 , 1);
-    object_pq->display();
-    object_pq->delete_node();
-    object_pq->display();
-    object_pq->delete_node();
-    object_pq->create_node(97 , 6);
-    object_pq->display();
-    delete object_pq;
+        case 3 :
+        {
+            auto p_q = new P_Q;
+            functions(p_q);
+            delete p_q;
+        }
+
+        default : std::cout<<"\nExiting\n";
+                  exit(0);
+        }
 }
