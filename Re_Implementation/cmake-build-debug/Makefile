@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/atrivedi/Assignment_3/Re_Implementation/cmake-build-deb
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/atrivedi/Downloads/clion-2017.3.4/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/atrivedi/Downloads/clion-2017.3.4/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,17 +111,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Re_Implementation
+# Target rules for targets named Single_ll
 
 # Build rule for target.
-Re_Implementation: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Re_Implementation
-.PHONY : Re_Implementation
+Single_ll: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Single_ll
+.PHONY : Single_ll
 
 # fast build rule for target.
-Re_Implementation/fast:
-	$(MAKE) -f CMakeFiles/Re_Implementation.dir/build.make CMakeFiles/Re_Implementation.dir/build
-.PHONY : Re_Implementation/fast
+Single_ll/fast:
+	$(MAKE) -f CMakeFiles/Single_ll.dir/build.make CMakeFiles/Single_ll.dir/build
+.PHONY : Single_ll/fast
+
+#=============================================================================
+# Target rules for targets named BST
+
+# Build rule for target.
+BST: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BST
+.PHONY : BST
+
+# fast build rule for target.
+BST/fast:
+	$(MAKE) -f CMakeFiles/BST.dir/build.make CMakeFiles/BST.dir/build
+.PHONY : BST/fast
+
+#=============================================================================
+# Target rules for targets named QuickSort
+
+# Build rule for target.
+QuickSort: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 QuickSort
+.PHONY : QuickSort
+
+# fast build rule for target.
+QuickSort/fast:
+	$(MAKE) -f CMakeFiles/QuickSort.dir/build.make CMakeFiles/QuickSort.dir/build
+.PHONY : QuickSort/fast
 
 main.o: main.cpp.o
 
@@ -129,7 +155,8 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/Re_Implementation.dir/build.make CMakeFiles/Re_Implementation.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/BST.dir/build.make CMakeFiles/BST.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/QuickSort.dir/build.make CMakeFiles/QuickSort.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +165,8 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/Re_Implementation.dir/build.make CMakeFiles/Re_Implementation.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/BST.dir/build.make CMakeFiles/BST.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/QuickSort.dir/build.make CMakeFiles/QuickSort.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,8 +175,36 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/Re_Implementation.dir/build.make CMakeFiles/Re_Implementation.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/BST.dir/build.make CMakeFiles/BST.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/QuickSort.dir/build.make CMakeFiles/QuickSort.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+main2.o: main2.cpp.o
+
+.PHONY : main2.o
+
+# target to build an object file
+main2.cpp.o:
+	$(MAKE) -f CMakeFiles/Single_ll.dir/build.make CMakeFiles/Single_ll.dir/main2.cpp.o
+.PHONY : main2.cpp.o
+
+main2.i: main2.cpp.i
+
+.PHONY : main2.i
+
+# target to preprocess a source file
+main2.cpp.i:
+	$(MAKE) -f CMakeFiles/Single_ll.dir/build.make CMakeFiles/Single_ll.dir/main2.cpp.i
+.PHONY : main2.cpp.i
+
+main2.s: main2.cpp.s
+
+.PHONY : main2.s
+
+# target to generate assembly for a file
+main2.cpp.s:
+	$(MAKE) -f CMakeFiles/Single_ll.dir/build.make CMakeFiles/Single_ll.dir/main2.cpp.s
+.PHONY : main2.cpp.s
 
 # Help Target
 help:
@@ -156,12 +212,17 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Re_Implementation"
+	@echo "... Single_ll"
+	@echo "... BST"
+	@echo "... edit_cache"
+	@echo "... QuickSort"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... main2.o"
+	@echo "... main2.i"
+	@echo "... main2.s"
 .PHONY : help
 
 

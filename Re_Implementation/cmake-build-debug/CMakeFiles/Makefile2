@@ -60,39 +60,113 @@ CMAKE_SOURCE_DIR = /home/atrivedi/Assignment_3/Re_Implementation
 CMAKE_BINARY_DIR = /home/atrivedi/Assignment_3/Re_Implementation/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/Re_Implementation.dir
+# Target rules for target CMakeFiles/Single_ll.dir
 
 # All Build rule for target.
-CMakeFiles/Re_Implementation.dir/all:
-	$(MAKE) -f CMakeFiles/Re_Implementation.dir/build.make CMakeFiles/Re_Implementation.dir/depend
-	$(MAKE) -f CMakeFiles/Re_Implementation.dir/build.make CMakeFiles/Re_Implementation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/atrivedi/Assignment_3/Re_Implementation/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Re_Implementation"
-.PHONY : CMakeFiles/Re_Implementation.dir/all
+CMakeFiles/Single_ll.dir/all:
+	$(MAKE) -f CMakeFiles/Single_ll.dir/build.make CMakeFiles/Single_ll.dir/depend
+	$(MAKE) -f CMakeFiles/Single_ll.dir/build.make CMakeFiles/Single_ll.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/atrivedi/Assignment_3/Re_Implementation/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target Single_ll"
+.PHONY : CMakeFiles/Single_ll.dir/all
 
 # Include target in all.
-all: CMakeFiles/Re_Implementation.dir/all
+all: CMakeFiles/Single_ll.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Re_Implementation.dir/rule: cmake_check_build_system
+CMakeFiles/Single_ll.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/atrivedi/Assignment_3/Re_Implementation/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Re_Implementation.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Single_ll.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/atrivedi/Assignment_3/Re_Implementation/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Re_Implementation.dir/rule
+.PHONY : CMakeFiles/Single_ll.dir/rule
 
 # Convenience name for target.
-Re_Implementation: CMakeFiles/Re_Implementation.dir/rule
+Single_ll: CMakeFiles/Single_ll.dir/rule
 
-.PHONY : Re_Implementation
-
-# clean rule for target.
-CMakeFiles/Re_Implementation.dir/clean:
-	$(MAKE) -f CMakeFiles/Re_Implementation.dir/build.make CMakeFiles/Re_Implementation.dir/clean
-.PHONY : CMakeFiles/Re_Implementation.dir/clean
+.PHONY : Single_ll
 
 # clean rule for target.
-clean: CMakeFiles/Re_Implementation.dir/clean
+CMakeFiles/Single_ll.dir/clean:
+	$(MAKE) -f CMakeFiles/Single_ll.dir/build.make CMakeFiles/Single_ll.dir/clean
+.PHONY : CMakeFiles/Single_ll.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Single_ll.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/BST.dir
+
+# All Build rule for target.
+CMakeFiles/BST.dir/all:
+	$(MAKE) -f CMakeFiles/BST.dir/build.make CMakeFiles/BST.dir/depend
+	$(MAKE) -f CMakeFiles/BST.dir/build.make CMakeFiles/BST.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/atrivedi/Assignment_3/Re_Implementation/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target BST"
+.PHONY : CMakeFiles/BST.dir/all
+
+# Include target in all.
+all: CMakeFiles/BST.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/BST.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/atrivedi/Assignment_3/Re_Implementation/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/BST.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/atrivedi/Assignment_3/Re_Implementation/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/BST.dir/rule
+
+# Convenience name for target.
+BST: CMakeFiles/BST.dir/rule
+
+.PHONY : BST
+
+# clean rule for target.
+CMakeFiles/BST.dir/clean:
+	$(MAKE) -f CMakeFiles/BST.dir/build.make CMakeFiles/BST.dir/clean
+.PHONY : CMakeFiles/BST.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/BST.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/QuickSort.dir
+
+# All Build rule for target.
+CMakeFiles/QuickSort.dir/all:
+	$(MAKE) -f CMakeFiles/QuickSort.dir/build.make CMakeFiles/QuickSort.dir/depend
+	$(MAKE) -f CMakeFiles/QuickSort.dir/build.make CMakeFiles/QuickSort.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/atrivedi/Assignment_3/Re_Implementation/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target QuickSort"
+.PHONY : CMakeFiles/QuickSort.dir/all
+
+# Include target in all.
+all: CMakeFiles/QuickSort.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/QuickSort.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/atrivedi/Assignment_3/Re_Implementation/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/QuickSort.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/atrivedi/Assignment_3/Re_Implementation/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/QuickSort.dir/rule
+
+# Convenience name for target.
+QuickSort: CMakeFiles/QuickSort.dir/rule
+
+.PHONY : QuickSort
+
+# clean rule for target.
+CMakeFiles/QuickSort.dir/clean:
+	$(MAKE) -f CMakeFiles/QuickSort.dir/build.make CMakeFiles/QuickSort.dir/clean
+.PHONY : CMakeFiles/QuickSort.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/QuickSort.dir/clean
 
 .PHONY : clean
 

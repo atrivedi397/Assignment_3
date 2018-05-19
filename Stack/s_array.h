@@ -1,85 +1,65 @@
 ///******************Implementation by using Array******************///
-
 #pragma once
 class s_array
 {
 public:
-    int top = -1 , size;
-    s_array()
-    {
-        int size_of_stack;
-        std::cout<<"\nEnter the size of stack: \n";
-        std::cin>>size_of_stack;
-        size = size_of_stack;
-    };
-    int* stack = new int[size];
-};
+    int top, Size, * stack;                             //"Size" should be used instead of "size"
+    s_array(): top(-1), Size(0), stack(nullptr) {       //Use of member initializer list is more beneficial
+        std::cout<<"\nEnter the Size of stack: \n";
+        std::cin>>Size;
+        stack = new int[Size];                          //stack memory allocation
+    }
 
-class operations : public s_array
-{
-public:
-    void first();
+    //member functions
+    void recent_push();
     void push(int element);
     bool pop();
     void display();
 };
 
-void operations::first()
-{
+//member function definitions
+void s_array::recent_push() {
     if(top == -1)
         std::cout<<"\nStack is empty.!! Nothing on top.\n";
     else
         std::cout<<std::endl<<stack[top]<<" is at top \n";
 }
 
-void operations::push(int element)
-{
-    if (top == size - 1)
-    {
+void s_array::push(int element) {
+    if (top == Size - 1) {
         std::cout << "\nOverflow !!!! Can't Insert More.\n";
         return;
     }
-    else
-    {
+    else {
         top++;
         stack[top] = element;
         return;
     }
 }
 
-bool operations::pop()
-{
-    int deleted_ele;
-    if(top < 0)
-    {
+bool s_array::pop() {
+    if(top < 0) {
         std::cout<<"\nUnderflow!!! Put some elements first.\n";
         return false;
     }
-    else
-    {
-        deleted_ele = stack[top--];
-        std::cout<<"\nThe popped element is : "<<deleted_ele<<std::endl;
+    else {
+        std::cout<<"\nThe popped element is : "<<stack[top--]<<std::endl;
         return true;
     }
 }
 
-void operations::display()
-{
+void s_array::display() {
     if(top == -1)
-    {
         std::cout<<"\nNothing to Display..!! Stack is empty.\n";
-    }
-    else
-    {
+    else{
         std::cout<<"\nYour stack is :\n";
         for(int i = top; i >= 0; i--)
-        {
-            std::cout<<stack[i]<<std::endl;
-        }
+            std::cout<<stack[i]<<"  ";
+        std::cout<<std::endl;
     }
 }
 
-///***************Implementation using Singly Linked List****************///
+///***************Implementation using Linked List****************///
 class s_ll
 {
 public:
@@ -93,14 +73,14 @@ public:
 class functions : public s_ll
 {
 public:
-    int size , count = 0;
+    int Size , count = 0;
     s_ll* top_ptr = nullptr;      //pointing at the top
     functions()                  //default constructor
     {
-        int size_of_stack;
-        std::cout<<"\nWhat is the size of the stack ?\n";
-        std::cin>>size_of_stack;
-        size = size_of_stack;
+        int Size_of_stack;
+        std::cout<<"\nWhat is the Size of the stack ?\n";
+        std::cin>>Size_of_stack;
+        Size = Size_of_stack;
     }
     void push(int element);
     void pop();
@@ -114,7 +94,7 @@ void functions::push(int element)
     new_node = new s_ll;
     new_node->data = element;
 
-    if(count >= size)
+    if(count >= Size)
     {
         std::cout<<"\nStack Overflow..!!!\n";
     }
