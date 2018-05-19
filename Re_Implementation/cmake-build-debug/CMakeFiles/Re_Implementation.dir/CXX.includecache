@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+/home/atrivedi/Assignment_3/Re_Implementation/BST.h
+
 /home/atrivedi/Assignment_3/Re_Implementation/QuickSort.h
 
 /home/atrivedi/Assignment_3/Re_Implementation/main.cpp
@@ -13,4 +15,6 @@ iostream
 -
 QuickSort.h
 /home/atrivedi/Assignment_3/Re_Implementation/QuickSort.h
+BST.h
+/home/atrivedi/Assignment_3/Re_Implementation/BST.h
 

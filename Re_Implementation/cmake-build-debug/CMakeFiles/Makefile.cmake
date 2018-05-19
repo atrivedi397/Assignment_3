@@ -45,5 +45,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Re_Implementation.dir/DependInfo.cmake"
+  "CMakeFiles/Single_ll.dir/DependInfo.cmake"
+  "CMakeFiles/BST.dir/DependInfo.cmake"
+  "CMakeFiles/QuickSort.dir/DependInfo.cmake"
   )
