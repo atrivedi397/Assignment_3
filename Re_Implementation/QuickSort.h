@@ -12,7 +12,7 @@ void swap(T1 *a , T1 *b)
 
 
 ///partition of an array using last element as pivot
-int partition_increasing(int arr[] , int start , int last)
+int partition_LOMUTO(int arr[] , int start , int last)
 {
     int pivot = arr[last];  ///choosing last element as pivotal element
     int i = start-1;        /// initialising i
@@ -31,15 +31,48 @@ int partition_increasing(int arr[] , int start , int last)
     return i+1;                          ///returning pivot position
 }
 
+
+int partition_HOARE(int arr[], int start , int last)
+{
+    int pivot = arr[start];
+    int i = start-1;
+    int j = last+1;
+    while(true)
+    {
+        do
+            i++;
+        while(arr[i] < pivot);
+        do
+            j--;
+        while(arr[j] > pivot);
+        if (i >= j)
+            return j;
+        else
+            swap(&arr[i], &arr[j]);
+    }
+}
+
+
 ///QuickSort Definition
 void Quick_sort(int arr[] , int start , int last)
 {
     int pivot_position;
     if(start < last)
     {
-        pivot_position = partition_increasing(arr , start ,last);
+        pivot_position = partition_LOMUTO(arr , start ,last);
         Quick_sort(arr ,start , pivot_position-1);
         Quick_sort(arr , pivot_position+1 , last);
+    }
+}
+
+void Quick_sort2(int arr[] , int start , int last)
+{
+    int pivot_position;
+    if(start < last)
+    {
+        pivot_position = partition_HOARE(arr , start ,last);
+        Quick_sort2(arr ,start , pivot_position);
+        Quick_sort2(arr , pivot_position+1 , last);
     }
 }
 // Created by atrivedi on 5/8/18.
