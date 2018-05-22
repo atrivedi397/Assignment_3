@@ -2,8 +2,8 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="Re_Implementation" targetName="QuickSort" />
       <config projectName="Re_Implementation" targetName="BST" />
+      <config projectName="Re_Implementation" targetName="QuickSort" />
       <config projectName="Re_Implementation" targetName="Single_ll" />
     </generated>
   </component>
@@ -15,23 +15,26 @@
   <component name="ChangeListManager">
     <list default="true" id="c3e31161-107d-4a21-858c-0c7f43649a11" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Re_Implementation.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Re_Implementation.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Re_Implementation.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Re_Implementation.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Re_Implementation.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Re_Implementation.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Re_Implementation.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Re_Implementation.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Re_Implementation" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Re_Implementation" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Re_Implementation.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Re_Implementation.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuickSort.h" beforeDir="false" afterPath="$PROJECT_DIR$/QuickSort.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Stack.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Stack.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Stack.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Stack.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Stack.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Stack.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Stack.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Stack.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Stack.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Stack.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Stack.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Stack.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Stack.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Stack.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Stack.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Stack.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Stack.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Stack.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/Stack.dir/used_actions.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/cmake-build-debug/Stack" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/cmake-build-debug/Stack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Stack/cmake-build-debug/Stack.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../Stack/cmake-build-debug/Stack.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tree/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tree/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tree/BST.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Tree/BST.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tree/cmake-build-debug/CMakeFiles/Tree.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Tree/cmake-build-debug/CMakeFiles/Tree.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tree/cmake-build-debug/Tree" beforeDir="false" afterPath="$PROJECT_DIR$/../Tree/cmake-build-debug/Tree" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,26 +50,29 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
+            <state relative-caret-position="126">
               <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Single_ll.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Single_ll.h">
+      <file leaf-file-name="QuickSort.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/QuickSort.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="41" column="89" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
+            <state relative-caret-position="954">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+              <folding>
+                <element signature="e#73#86#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main2.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main2.cpp">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state relative-caret-position="396">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -82,13 +88,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/QuickSort.h" />
         <option value="$PROJECT_DIR$/Quick.cpp" />
         <option value="$PROJECT_DIR$/BST.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/main2.cpp" />
         <option value="$PROJECT_DIR$/Single_ll.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/QuickSort.h" />
       </list>
     </option>
   </component>
@@ -98,11 +104,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
-    <option name="y" value="48" />
-    <option name="width" value="667" />
-    <option name="height" value="706" />
+    <option name="y" value="86" />
+    <option name="width" value="647" />
+    <option name="height" value="529" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -127,7 +133,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="VCS&#9;ACTION&#9;VcsGroups" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Tree" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="debugger.stepping" />
@@ -144,10 +150,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Single_ll">
+  <component name="RunManager" selected="Application.QuickSort">
     <configuration name="BST" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Re_Implementation" TARGET_NAME="BST" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Re_Implementation" RUN_TARGET_NAME="Single_ll" />
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Re_Implementation" RUN_TARGET_NAME="Single_ll" EXPLICIT_BUILD_TARGET_NAME="all" />
-    <configuration name="QuickSort" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Re_Implementation" TARGET_NAME="QuickSort" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Re_Implementation" RUN_TARGET_NAME="Single_ll" />
+    <configuration name="QuickSort" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Re_Implementation" TARGET_NAME="QuickSort" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Re_Implementation" RUN_TARGET_NAME="QuickSort" />
     <configuration name="Single_ll" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Re_Implementation" TARGET_NAME="Single_ll" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Re_Implementation" RUN_TARGET_NAME="Single_ll" />
     <list>
       <item itemvalue="Application.Build All" />
@@ -176,26 +182,28 @@
       <workItem from="1526059938829" duration="1889000" />
       <workItem from="1526641339455" duration="708000" />
       <workItem from="1526658614465" duration="12537000" />
+      <workItem from="1526843350123" duration="6860000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43342000" />
+    <option name="totallyTimeSpent" value="50202000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="1366" height="706" extended-state="6" />
+    <frame x="0" y="28" width="1366" height="706" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14977646" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.5187266" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.5168539" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.5131086" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" weight="1.0" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.52434456" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.15355805" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -218,7 +226,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="72" />
+      <option name="time" value="92" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -271,6 +279,30 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main2.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Single_ll.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="41" column="89" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -514,37 +546,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QuickSort.h">
+    <entry file="file://$PROJECT_DIR$/BST.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding>
-            <element signature="e#73#86#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="72">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/Single_ll.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="74" column="14" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="18">
+          <caret line="41" column="89" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
+        <state relative-caret-position="126">
           <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BST.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -558,10 +577,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Single_ll.h">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="41" column="89" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
+        <state relative-caret-position="396">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QuickSort.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="954">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="e#73#86#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

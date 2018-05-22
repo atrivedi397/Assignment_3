@@ -15,7 +15,7 @@ void Quick()
     }
 
 ///passing from 0 to last index number to sort the while array
-    Quick_sort(array, 0 , Size-1);
+    Quick_sort2(array, 0 , Size-1);
 
     std::cout<<"\nSorted array: \n\n";
     for(int i = 0; i < Size; i++)
